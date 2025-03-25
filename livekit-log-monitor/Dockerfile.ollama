@@ -1,0 +1,4 @@
+FROM ollama/ollama
+
+# สั่ง preload model mistral ตอน build image
+RUN ollama serve & sleep 5 && ollama pull mistral
